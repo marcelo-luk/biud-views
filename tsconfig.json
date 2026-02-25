@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["src/*"],
+      "@common/*": ["common/*"],
+      "@config/*": ["config/*"],
+      "@esg/*": ["apps/esg/src/*"],
+      "@notification/*": ["apps/notification/src/*"],
+      "@entities/*": ["common/database/entities/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "apps/**/*",
+    "common/**/*",
+    "common/database/naming-strategy/snake-naming.strategy.ts",
+    "config/data-source.ts",
+    "apps/esg/src/survey/controller/s.ts",
+    "apps/notification/src/notification/controller/n.ts"
+  ]
+}

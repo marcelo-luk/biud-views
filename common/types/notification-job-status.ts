@@ -1,0 +1,1 @@
+export type NotificationJobStatus = 'active' | 'canceled' | 'executed'
